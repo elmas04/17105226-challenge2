@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+<title>SpaceX Watch</title>
+<link rel="stylesheet" type="text/css" href="css/challenge2.css"/>
+	
+
+</head>
+
+<body>
+
+
+	<div id="container">
+	<div id="box">
+		<div id="sterren"></div>
+		<div id="tijdendatum">
+			<h1 id="klok"></h1>
+			<p id="datum"></p>
+			
+			<script src="js/tijd.js"></script>
+			<script src="js/datum.js"></script>
+		</div>
+	</div>
+		       <script src="js/TweenMax.min.js"></script>
+				 <script>
+					TweenMax.from("#klok, #datum", 5,{opacity:0, scale:0, ease:Bounce.easeOut});
+					TweenMax.to("#sterren", 210,{y:50, x:40, ease:Elastic.easeOut});
+				</script>
+	</div>
+
+
+
+
+
+
+	
+</body>
+</html>
